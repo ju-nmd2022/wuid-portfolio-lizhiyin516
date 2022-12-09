@@ -1,0 +1,425 @@
+/* 去除所有标签的默认内外边距 */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* 去除所有a标签的默认下划线 */
+a {
+	text-decoration: none;
+}
+
+/* 去除所有li标签的默认样式 */
+li {
+	list-style: none;
+}
+
+/* 引入字体 */
+@font-face {
+	font-family: 'ttling';
+	src: url(../font/TTLingHeiJ.ttf);
+}
+
+/* 顶部导航 */
+.header {
+	width: 100%;
+}
+
+/* 导航顶部 */
+.header-top {
+	width: 1200px;
+	margin: 30px auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/* logo */
+.logo h1 {
+	font-family: ttling;
+	letter-spacing: 5px;
+	color: #22c56c;
+}
+
+.res-box {
+	font-size: 14px;
+}
+
+.res-box a {
+	color: #555555;
+}
+
+.res-box a:hover {
+	color: #1B9854;
+}
+
+/* 导航菜单 */
+.header-nav {
+	background: #1B9854;
+}
+
+.header-nav ul {
+	width: 1200px;
+	margin: auto;
+}
+
+.header-nav ul li {
+	display: inline-block;
+}
+
+.header-nav ul li a {
+	display: block;
+	width: 120px;
+	padding: 10px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.header-nav ul li a:hover {
+	background: #22c56c;
+}
+
+.header-nav ul .active a {
+	background: #22c56c;
+}
+
+/* 首页大图 */
+.banner {
+	width: 1200px;
+	height: 400px;
+	margin: 20px auto 40px auto;
+}
+
+.banner img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+/* 公告标题 */
+.box-title {
+	width: 1200px;
+	margin: 10px auto;
+}
+
+.box-title h3 {
+	font-size: 20px;
+	letter-spacing: 4px;
+	font-family: '黑体';
+	color: #22c56c;
+}
+
+.home-about {
+	display: flex;
+	justify-content: space-between;
+	width: 1200px;
+	margin: 20px auto 40px auto;
+}
+
+.home-about img {
+	width: 500px;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 6px;
+}
+
+.home-about-text {
+	width: 650px;
+}
+
+.home-about-text p {
+	font-size: 15px;
+	text-indent: 2em;
+	line-height: 1.8;
+	margin: 5px 0;
+}
+
+.work {
+	width: 1200px;
+	margin: 20px auto 40px auto;
+}
+
+.work ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background: #f2f2f2;
+	box-shadow: inset 2px 3px 10px #CCCCCC;
+	padding: 10px 30px;
+	border-radius: 8px;
+}
+
+.work ul li {
+	cursor: pointer;
+	width: 23%;
+	margin: 15px 0;
+	background: #FFFFFF;
+	border-radius: 3px;
+	overflow: hidden;
+	box-shadow: 2px 3px 5px #CCCCCC;
+	transition: all 0.3s;
+}
+.work ul li a{
+	color: #333333;
+}
+.work ul li img {
+	display: block;
+	width: 100%;
+	height: 180px;
+	object-fit: cover;
+}
+
+.work ul li p {
+	padding: 10px 20px;
+}
+
+.work ul li:hover {
+	transform: translateY(-10px);
+}
+
+.news {
+	width: 1200px;
+	margin: 20px auto 40px auto;
+}
+
+.news ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.news ul li {
+	width: 30%;
+	padding: 1%;
+	border: 1px solid #eaeaea;
+	margin-bottom: 20px;
+	border-radius: 6px;
+}
+
+.news-img {
+	width: 100%;
+	height: 220px;
+	overflow: hidden;
+}
+
+.news ul li img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: all 0.3s;
+}
+
+.news-text h3 {
+	margin: 5px 0;
+	color: #000000;
+	font-weight: 400;
+	font-size: 20px;
+	transition: all 0.3s;
+}
+
+.news-text p {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	color: #999999;
+	font-size: 15px;
+	line-height: 1.6;
+}
+.news ul li:hover img {
+	transform: scale(1.2);
+}
+.news ul li:hover h3 {
+	color: #1B9854;
+}
+/* 底部 */
+.footer{
+	padding: 20px 0;
+	background: #1B9854;
+}
+.footer-nav{
+	width: 1200px;
+	margin: auto;
+}
+.footer-nav ul li{
+	display: inline-block;
+	margin-right: 30px;
+}
+.footer-nav ul li a{
+	color: #FFFFFF;
+}
+.footer-crt{
+	display: flex;
+	justify-content: space-between;
+	width: 1200px;
+	margin: auto;
+	color: #FFFFFF;
+	margin-top: 40px;
+	font-size: 12px;
+}
+.footer-crt a{
+	color: #FFFFFF;
+}
+/* 内页大图 */
+.f-banner{
+	width: 100%;
+	height: 400px;
+}
+.f-banner img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+/* 简介 */
+.about{
+	width: 1160px;
+	margin: 30px auto;
+	padding: 20px;
+	border: 1px solid #e7eaf1;
+	border-radius: 8px;
+	box-shadow: 2px 1px 10px #CCCCCC;
+}
+.about p{
+	margin: 5px 0;
+	line-height: 1.6;
+	font-size: 16px;
+	text-indent: 2em;
+	color: #555555;
+}
+.about img{
+	max-width: 100%;
+	display: block;
+	margin: 10px auto;
+}
+/* 联系我 */
+.idea{
+	width: 1000px;
+	padding: 20px 0;
+	margin: auto;
+}
+.idea label{
+	display: block;
+	margin: 20px 0;
+}
+.idea input{
+	width: 98%;
+	height: 40px;
+	padding-left: 2%;
+	border-radius: 30px;
+	border: 1px solid #333333;
+	font-size: 16px;
+}
+.idea input[type='submit']{
+	display: block;
+	width: 120px;
+	margin: auto;
+	cursor: pointer;
+	padding-left: 0;
+	background: #333333;
+	color: #FFFFFF;
+	font-size: 16px;
+}
+.idea input[type='submit']:hover{
+	opacity: 0.8;
+}
+.idea textarea{
+	width: 96%;
+	height: 150px;
+	padding: 2%;
+	border-radius: 30px;
+	font-size: 16px;
+}
+/* 注册登录 */
+/* 注册 */
+.login{
+	/* 弹性布局 */
+	display: flex;
+	/* 换行 */
+	flex-wrap: wrap;
+	/* 水平居中 */
+	justify-content: center;
+	/* 垂直居中 */
+	align-items: center;
+	/* 长度设置为100% */
+	width: 100%;
+	/* 高度为70vh 浏览器高度为100vh */
+	height: 75vh;
+}
+.login-f{
+	/* 内边距为20px */
+	padding: 20px;
+	/* 设置长度 */
+	width: 300px;
+	/* 设置背景颜色 */
+	background: #FFFFFF;
+	/* 盒子阴影 */
+	box-shadow: 2px 3px 5px #CCCCCC;
+	/* 圆弧角度 */
+	border-radius: 10px;
+}
+.login h3{
+	/* 文字间距设置为3px */
+	letter-spacing: 3px;
+	/* 设置字体大小 */
+	font-size: 22px;
+	/* 设置字体颜色 */
+	color: #333333;
+	/* 下侧外边距为20px */
+	margin-bottom: 20px;
+}
+/* 账号密码框 */
+.login-box input{
+	/* 设置长度 */
+	width: 95%;
+	/* 设置高度 */
+	height: 35px;
+	/* 设置行高 */
+	line-height: 35px;
+	/* 下册外边距为15 */
+	margin-bottom: 15px;
+	/* 左侧内边距 */
+	padding-left: 5%;
+	/* 设置边框 */
+	border: 1px solid #CCCCCC;
+	/* 设置圆弧 */
+	border-radius: 6px;
+}
+/* 按钮 */
+.login button{
+	/* 设置为块级元素 */
+	display: block;
+	/* 设置背景颜色 */
+	background: #1B9854;
+	/* 设置长度 */
+	width: 180px;
+	/* 设置高度 */
+	height: 35px;
+	/* 去除边框 */
+	border: none;
+	/* 设置文字颜色 */
+	color: #FFFFFF;
+	/* 设置字体大小 */
+	font-size: 15px;
+	/* 设置弧度 */
+	border-radius: 6px;
+	margin: 15px auto 10px auto;
+	letter-spacing: 3px;
+}
+/* 登陆下侧文字 */
+.login p{
+	/* 设置字体大小 */
+	font-size: 12px;
+	/* 文字居中 */
+	text-align: center;
+	/* 字体颜色 */
+	color: #999999;
+}
+.login p a{
+	/* 字体颜色 */
+	color: #016bd9;
+}
